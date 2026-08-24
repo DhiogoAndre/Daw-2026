@@ -1,6 +1,8 @@
 :root {
     --bg: #fafaf9;
     --text: #000000;
+    --text-muted: #78716c;
+    --primary: #ea580c;
 }
 
 /*
@@ -65,4 +67,59 @@ header .cart-button {
 header .cart-botton img {
     width: 1.25rem;
     height: 1.25rem;
+}
+
+/*
+* navegação
+*/
+
+nav {
+    background-color: #ffffff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: .5rem;
+    padding-block: 1rem;
+}
+
+nav ul a {
+    border: 1px solid #E7E5E4;
+    border-radius: 999px;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+nav ul a.active{
+    border-color: var(--primary);
+    background-color: var(--primary);
+    color: #fff;
+}
+
+nav ul a:not(a.active):hover{
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+/*
+* footer
+*/
+
+footer {
+    background-color: var(--text-muted);
+    color: var(--bg);
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    padding-block: 1.5rem;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
