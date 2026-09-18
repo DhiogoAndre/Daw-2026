@@ -1,42 +1,182 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cardápio Digital</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
+
 <body>
     <header>
-        <div class="brand">
-            <img src="./assets/img/logo_lanchonete.svg" alt="Logo">
-            <div>
-                <h1>Cardapio Digital</h1>
-                <p>Faca o seu pedido no pelo nosso Cardápio Digital</p>
+        <div class="container">
+            <div class="brand">
+                <img src="assets/img/logo_lanchonete.svg" alt="Logo do Cardápio Digital">
+                <div>
+                    <h1>Cardápio Digital</h1>
+                    <p>Faça o seu pedido pelo nosso cardápio digital</p>
+                </div>
+            </div>
+            <div class="cart-button">
+                <img src="assets/img/cart.svg" alt="Logo do Carrinho de Compras">
             </div>
         </div>
-        <div class="cart-button">
-            <img src="./assets/img/cart.svg" alt="Carrinho">
-        </div>
     </header>
+
     <nav>
         <ul class="container">
-            <li><a href="#"class="active">Todos</a></li>
-            <li><a href="#">Lanches</a></li>
-            <li><a href="#">Porções</a></li>
-            <li><a href="#">Bebidas</a></li>
-            <li><a href="#">Sobremesas</a></li>
+            <li><a href="#" class="active">TODOS</a></li>
+            <li><a href="#">LANCHES</a></li>
+            <li><a href="#">PORÇÕES</a></li>
+            <li><a href="#">BEBIDAS</a></li>
+            <li><a href="#">SOBREMESAS</a></li>
         </ul>
     </nav>
+
     <main>
-        <!== colocar o conteudo principal aqui (cards de produtos) ==>
+        <section>
+            <header>
+                <h2>Produtos</h2>
+                <p> Categoria <span id="category-name">Todos</span> -
+                    10 itens</p>
+            </header>
+
+            <article>
+                <figure>
+                    <img src="assets/img/burger.png" alt="burguer">
+                    <figcaption>Lanches</figcaption>
+                </figure>
+                <h3>Burger</h3>
+                <p>Pão brioche, hambúrguer 160g, queijo prato e molho da casa.</p>
+                <p>R$ 22,00</p>
+                <button type="button">Adicionar</button>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="assets/img/burger-bacon.png" alt="Bacon burguer">
+                    <figcaption>Lanches</figcaption>
+                </figure>
+                <h3>Bacon burguer</h3>
+                <p>Pão brioche, hambúrguer 160g, bacon, queijo cheddar e molho da casa.</p>
+                <p>R$ 25,00</p>
+                <button type="button">Adicionar</button>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="assets/img/burger-double.png" alt="Double burguer">
+                    <figcaption>Lanches</figcaption>
+                </figure>
+                <h3>Double burguer</h3>
+                <p>Dois hambúrgueres de 160g cada, cheddar, bacon e cebola caramelizada.</p>
+                <p>R$ 29,00</p>
+                <button type="button">Adicionar</button>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="assets/img/batata-rustica.png" alt="Batata Rustica">
+                    <figcaption>Porções</figcaption>
+                </figure>
+                <h3>Batata Rustica</h3>
+                <p>Porção de batata com alecrim, parmesão e maionese verde.</p>
+                <p>R$ 18,00</p>
+                <button type="button">Adicionar</button>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="assets/img/batata-tradicional.png" alt="Batata Tradicional">
+                    <figcaption>Porções</figcaption>
+                </figure>
+                <h3>Batata Tradicional</h3>
+                <p>Porção de batata e maionese verde.</p>
+                <p>R$ 15,00</p>
+                <button type="button">Adicionar</button>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="assets/img/agua.png" alt="Água">
+                    <figcaption>Bebidas</figcaption>
+                </figure>
+                <h3>Água</h3>
+                <p>Água mineral sem gás com 500ml.</p>
+                <p>R$ 8,00</p>
+                <button type="button">Adicionar</button>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="assets/img/refri.png" alt="Refrigerante">
+                    <figcaption>Bebidas</figcaption>
+                </figure>
+                <h3>Refrigerante</h3>
+                <p>Copo de refrigerante de 300 ml.</p>
+                <p>R$ 10,00</p>
+                <button type="button">Adicionar</button>
+            </article>
+            <article>
+                <figure>
+                    <img src="assets/img/chopp.png" alt="Chopp">
+                    <figcaption>Bebidas</figcaption>
+                </figure>
+                <h3>Chopp</h3>
+                <p>Caneca de 300 ml do nosso chopp pilsen geladíssimo.</p>
+                <p>R$ 15,00</p>
+                <button type="button">Adicionar</button>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="assets/img/petit-gateau.png" alt="Petit Gâteau">
+                    <figcaption>Sobremesas</figcaption>
+                </figure>
+                <h3>Petit Gâteau</h3>
+                <p>Petit Gateau com uma bola de sorvete de creme.</p>
+                <p>R$ 25,00</p>
+                <button type="button">Adicionar</button>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="assets/img/mousse-maracuja.png" alt="Mousse de Maracujá">
+                    <figcaption>Sobremesas</figcaption>
+                </figure>
+                <h3>Mousse de Maracujá</h3>
+                <p>Mousse de maracujá feito com a fruta de verdade.</p>
+                <p>R$ 18,00</p>
+                <button type="button">Adicionar</button>
+            </article>
+
+        </section>
+
+        <aside>
+            <h2>Seu Pedido</h2>
+            <div class="cart-empty">
+                <img src="assets/img/cart.svg" />
+                <p>Seu carrinho está vazio</p>
+                <p>Escolha um item do cardápio para começar</p>
+            </div>
+
+        </aside>
     </main>
-    <footer class="container">
-        <p>Cardapio digital desenvolvimento de alicacao web</p>
-        <p>Rua Mato Grosso, 200 - Pato Branco - PR</p>
+
+    <footer>
+        <div class="container">
+            <p> Cardápio Digital - Desenvolvimento de Aplicações para WEB. </p>
+            <p> Rua Mato Grosso, 200 - Pato Branco-PR </p>
+        </div>
     </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>

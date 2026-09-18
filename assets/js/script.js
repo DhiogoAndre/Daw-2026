@@ -23,7 +23,7 @@ categoryLinks.forEach(function(link)
         {
             otherLink.classList.remove('active');
         });
-
+        
         //Adicionar a class active
         link.classList.add('active');
     });
