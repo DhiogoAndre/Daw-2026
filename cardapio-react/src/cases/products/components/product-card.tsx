@@ -1,7 +1,7 @@
-import type { Product } from "../dtos/product"
+import type { Products } from "../dtos/products"
 
 type productCardProp = {
-  product: Product
+  product: Products
 }
 
 export function ProductCard( { product }: productCardProp) {
